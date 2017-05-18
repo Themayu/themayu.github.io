@@ -1,0 +1,63 @@
+.hexagon.hexagon-alternative {
+	background: #FFFFFF;
+}
+.hexagon.hexagon-alternative:before {
+	border-bottom-color: #FFFFFF;
+}
+.hexagon.hexagon-alternative:after {
+	border-top-color: #FFFFFF;
+}
+
+#header .profile-image {
+  border-radius: 50%;
+  width: 80px;
+}
+#header .profile-container,
+#logo {
+  display: inline-block;
+  padding: 0;
+  vertical-align: top;
+}
+
+#logo {
+  bottom: 5px;
+  position: relative;
+  text-align: left;
+  margin-left: 1em;
+}
+
+#headline-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 4em;
+  padding-top: 4em;
+  width: 452px;
+}
+
+#pf-items .pf-item {
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 5px;
+	width: 50%;
+}
+
+#pf-items .pf-item .pf-item-title {
+	font-size: 1.2em;
+}
+#pf-items .pf-item .pf-item-image-frame {
+	position: relative;
+	height: 203px;
+}
+#pf-items .pf-item .pf-item-image,
+#pf-items .pf-item .pf-item-image-link {
+	background: rgba(0, 0, 0, 0.5);
+	display: inline-block;
+	height: 203px;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	width: 361px;
+}
+#pf-items .pf-item .pf-item-description {
+	font-size: 0.833em;
+}

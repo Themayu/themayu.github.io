@@ -13,11 +13,12 @@ Released   : 20131117
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title></title>
+		<title>Jamie Ridding - Website Developer, Student, Gamer</title>
 		<meta name="keywords" content="" />
 		<meta name="description" content="" />
 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
 		<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="custom.css" rel="stylesheet" type="text/css" media="all" />
 		<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
 
 		<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
@@ -26,10 +27,16 @@ Released   : 20131117
 	<body>
 		<div id="header-wrapper">
 			<div id="header" class="container">
-				<div id="logo">
-					<span class="icon icon-group"></span>
-					<h1><a href="#">Jamie Ridding</a></h1>
-					<span>Website Developer, Student, Gamer.</span>
+				<div id="headline-wrapper">
+					<div class="hexagon hexagon-alternative profile-container">
+						<img class="profile-image" src="img/profile.jpg" />
+					</div><!--
+
+				--><div id="logo">
+						<!-- <i class="icon icon-group"></i> -->
+						<h1 class="page-title"><a href="https://linkedin.com/in/jamie-ridding/" target="_blank">Jamie Ridding</a></h1>
+						<span class="page-subtitle">Website Developer, Student, Gamer.</span>
+					</div>
 				</div>
 				<div id="triangle-up"></div>
 			</div>
@@ -49,43 +56,59 @@ Released   : 20131117
 
 				<div class="extra2 container">
 					<div class="ebox1" id="about">
-						<div class="hexagon"><span class="icon icon-lightbulb"></span></div>
+						<div class="hexagon"><i class="icon icon-lightbulb"></i></div>
 						<div class="title">
 							<h2>About me</h2>
 							<span class="byline">Information about myself.</span>
 						</div>
 						<p>Hello. My name is Jamie Ridding.</p>
-						<p>I am an aspiring website developer with in both front-end and back-end development, and mostly enjoy helping others through fixing exceptions and issues in their code. I can often be found on Discord, hanging around in the main help servers for HTML and JavaScript—especially those pertaining to the Nodejs framework, which I have experience using.</p>
-						<a href="#" class="button">Etiam posuere</a>
+						<p>I am an aspiring website developer within both front-end and back-end development and mostly enjoy helping others through fixing exceptions and issues in their code. I can often be found on Discord, hanging around in the main help servers for HTML and JavaScript—especially those pertaining to the Nodejs framework, which I have experience using.</p>
 					</div>
 
 					<div class="ebox2" id="skills">
-						<div class="hexagon"><span class="icon icon-bullhorn"></span></div>
+						<div class="hexagon"><i class="icon icon-bullhorn"></i></div>
 						<div class="title">
 							<h2>My skills</h2>
-							<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
 						</div>
-						<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Pellentesque tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh. Suspendisse dictum porta lectus. Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo. Pellentesque imperdiet.</p>
+						<p>I have experience and skill in the following languages:</p>
+						<ul>
+							<li>HTML</li>
+							<li>JavaScript</li>
+						</ul>
 						<a href="#" class="button">Etiam posuere</a>
 					</div>
 
 					<div class="ebox2" id="my-portfolio">
-						<div class="hexagon"><span class="icon icon-bullhorn"></span></div>
+						<div class="hexagon"><i class="icon icon-bullhorn"></i></div>
 						<div class="title">
 							<h2>Portfolio</h2>
-							<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+							<span class="byline">A showcase of my skills.</span>
 						</div>
-						<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Pellentesque tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh. Suspendisse dictum porta lectus. Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo. Pellentesque imperdiet.</p>
-						<a href="#" class="button">Etiam posuere</a>
+						<p>Below are examples of what I have created in my time as a website developer:</p>
+						<div id="pf-items">
+							<div class="pf-item">
+								<div class="pf-item-title">Local weather app</div>
+								<div class="pf-item-image-frame">
+									<img src="img/pf-items/local-weather-app.png" alt="Local Weather App" class="pf-item-image" />
+									<a class="pf-item-image-link" href="http://codepen.io/Zuris/full/RGbwOP/" target="jr-portfolio"></a>
+								</div>
+								<div class="pf-item-description">
+									<p>This project, created as part of my FreeCodeCamp front-end certification, will get a user's approximate location from their IP, and then return information on the current weather in their area, using the OpenWeatherMap API.</p>
+								</div>
+							</div><!--
+					 --><div class="pf-item"></div>
+						</div>
+						<a href="#" class="button">View my portfolio on <i class="icon icon-codepen" aria-hidden="true"> Codepen</i></a>
 
 						<div class="ebox2" id="social">
-							<div class="hexagon"><span class="icon icon-user"></span></div>
+							<div class="hexagon"><i class="icon icon-user"></i></div>
 							<div class="title">
 								<h2>Social Media</h2>
+								<span class="byline">You can find me (and possibly more information about me) at the following links.</span>
 							</div>
-							<a href="#" class="button"><i class="icon icon-twitter-sign"></i></a>
-							<a href="#" class="button icon icon-linkedin-sign"></a>
-							<a href="#" class="button"><i class="icon icon-github-sign"></i></a>
+							<a href="https://twitter.com/ZurisGame" class="button"><i class="icon icon-twitter-sign" target="_blank"></i></a>
+							<a href="https://linkedin.com/in/jamie-ridding/" class="button icon icon-linkedin-sign" target="_blank"></a>
+							<a href="https://github.com/Themayu" class="button"><i class="icon icon-github-sign" target="_blank"></i></a>
 						</div>
 					</div>
 
@@ -94,13 +117,21 @@ Released   : 20131117
 			</div>
 		</div>
 		<div id="stamp" class="container">
-			<div class="hexagon"><span class="icon icon-wrench"></span></div>
+			<div class="hexagon"><i class="icon icon-wrench"></i></div>
 		</div>
 		<div id="copyright" class="container">
 			<p>&copy; Jamie Ridding. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
+    <script>
+      //<![CDATA[
+        // If GoogleAPIs CDN is unavailable for ANY reason, fallback to local jQuery script file.
+        // Commented CDATA tag is to prevent web spiders (googlebot, etc.) crawling amy link(s)
+        // found within the code.
+        window.jQuery || document.write("<script src=\"js/jquery-3.2.1.min.js\"><\/script>");
+      //]]>
+    </script>
 		<script type="text/javascript">
 			if (jQuery) {
 				$(document).ready(function() {

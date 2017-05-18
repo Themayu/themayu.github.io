@@ -30,7 +30,7 @@
 
 	/*
 		Powered by:
-		
+
 		Font Awesome (http://fortawesome.github.com/Font-Awesome/)
 		Font Awesome More (http://gregoryloucas.github.com/Font-Awesome-More/)
 	*/
@@ -208,6 +208,7 @@
 		.icon-linkedin-sign:before        { content: "\f08c"; }
 		.icon-pushpin:before              { content: "\f08d"; }
 		.icon-external-link:before        { content: "\f08e"; }
+		.icon-codepen:before							{ content: "\f1cb"; }
 
 		.icon-signin:before               { content: "\f090"; }
 		.icon-trophy:before               { content: "\f091"; }
