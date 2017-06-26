@@ -125,12 +125,12 @@ Released   : 20131117
 									</a>
 								</div>
 								<div class="pf-item-description">
-									<p>This project, created as part of my FreeCodeCamp front-end certification, will get a user's approximate location from their IP, and then return information on the current weather in their area, using the OpenWeatherMap API.</p>
+									<p>This is a "simple" calculator project that I built as a part of my FreeCodeCamp front-end certification. It is designed to act exactly like an ordinary non-scientific calculator in every way that I could possibly manage.</p>
 								</div>
 							</div>
 						</div>
 						<a href="http://codepen.io/Zuris/full/yJwwxd/" class="button" target="themayu.github.io/jr-portfolio">
-							View my portfolio on<!--
+							View my full portfolio on<!--
 					 --><br /><!--
 					 --><i class="icon icon-codepen" aria-hidden="true"> Codepen</i>
 						</a>
@@ -160,16 +160,32 @@ Released   : 20131117
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
     <script>
-      //<![CDATA[
+      <!--
+			//<![CDATA[
         // If GoogleAPIs CDN is unavailable for ANY reason, fallback to local jQuery script file.
         // Commented CDATA tag is to prevent web spiders (googlebot, etc.) crawling amy link(s)
         // found within the code.
+
+				//"<!--" is treated as a single-line comment in JavaScript, but only if it is the first
+				//non-whitespace character on the page. "-->" is treated the same way.
         window.jQuery || document.write("<script src=\"js/jquery-3.2.1.min.js\"><\/script>");
       //]]>
+			-->
     </script>
 		<script type="text/javascript">
-			if (jQuery) {
+      <!--
+			//"<!--" is treated as a single-line comment in JavaScript, but only if it is the first
+			//non-whitespace character on the page. "-->" is treated the same way.
+			if (window.jQuery) {
 				$(document).ready(function() {
+					var $menu = $("#menu-wrapper");
+					var $menuBar = $("#menu ul");
+					var $menuPosition = $menu.offset().top;
+					var $menuMargin = parseFloat($menuBar.css("margin-bottom"));
+					var $menuHeight = $menu.height();
+					var $menuZindex = $menu.css("z-index");
+					var $pageContent = $("#featured-wrapper");
+					var $pageContentPadding = parseFloat($pageContent.css("padding-top"));
 					$("#menu ul li a").click(function(e) {
 						var section = $(this).attr('href');
 
@@ -184,8 +200,20 @@ Released   : 20131117
 							scrollTop: $(section).offset().top
 						}, 500);
 					}
+
+					$(window).scroll(function(event) {
+						var scrollTop = $(window).scrollTop();
+						if (scrollTop >= $menuPosition) {
+							$menu.css({position:"fixed", top:0, left:0, right:0, zIndex:999});
+							$pageContent.css({paddingTop:($pageContentPadding+$menuHeight+$menuMargin)});
+						} else {
+							$menu.css({position:"static", top:0, zIndex:$menuZindex});
+							$pageContent.css({paddingTop:$pageContentPadding});
+						}
+					});
 				});
 			}
+			-->
 		</script>
 	</body>
 </html>
