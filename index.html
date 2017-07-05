@@ -186,6 +186,7 @@ Released   : 20131117
 					var $menuZindex = $menu.css("z-index");
 					var $pageContent = $("#featured-wrapper");
 					var $pageContentPadding = parseFloat($pageContent.css("padding-top"));
+
 					$("#menu ul li a").click(function(e) {
 						var section = $(this).attr('href');
 
@@ -204,10 +205,10 @@ Released   : 20131117
 					$(window).scroll(function(event) {
 						var scrollTop = $(window).scrollTop();
 						if (scrollTop >= $menuPosition) {
-							$menu.css({position:"fixed", top:0, left:0, right:0, zIndex:999});
+							$menu.css({position:"fixed", top:0, left:0, right:0, zIndex:999}).css("box-shadow", "0 1px 5px black");
 							$pageContent.css({paddingTop:($pageContentPadding+$menuHeight+$menuMargin)});
 						} else {
-							$menu.css({position:"static", top:0, zIndex:$menuZindex});
+							$menu.css({position:"static", top:0, zIndex:$menuZindex, boxShadow:"none"});
 							$pageContent.css({paddingTop:$pageContentPadding});
 						}
 					});
